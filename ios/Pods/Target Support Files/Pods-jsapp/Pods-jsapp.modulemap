@@ -1,0 +1,6 @@
+module Pods_jsapp {
+  umbrella header "Pods-jsapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

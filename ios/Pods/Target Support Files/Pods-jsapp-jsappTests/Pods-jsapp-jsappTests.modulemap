@@ -1,0 +1,6 @@
+module Pods_jsapp_jsappTests {
+  umbrella header "Pods-jsapp-jsappTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
