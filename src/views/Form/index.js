@@ -80,19 +80,19 @@ const FormPage = props => {
         .then((result) => {
             switch (result) {
                 case RESULTS.UNAVAILABLE:
-                    this.setState({ isCamera: false })
+                    console.log('The permission is UNAVAILABLE')
                     break;
                 case RESULTS.DENIED:
-                    this.setState({ isCamera: false })
+                    console.log('The permission is DENIED')
                     break;
                 case RESULTS.LIMITED:
-                    console.log('The permission is limited: some actions are possible');
+                    console.log('The permission is LIMITED')
                     break;
                 case RESULTS.GRANTED:
-                    this.setState({ isCamera: true })
+                    console.log('The permission is GRANTED')
                     break;
                 case RESULTS.BLOCKED:
-                    this.setState({ isCamera: false })
+                    console.log('The permission is BLOCKED')
                     break;
             }
         })
